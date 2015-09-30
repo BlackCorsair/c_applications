@@ -1,0 +1,2 @@
+para compilar usa lo siguiente:
+g++ MagicCounter.cpp -o MagicCounter Jugador.cpp Jugador.h

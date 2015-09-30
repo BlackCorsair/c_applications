@@ -1,0 +1,21 @@
+#include <iostream>
+#include <iomanip>
+#include <string>
+
+int main()
+{
+    using namespace std;
+
+    string firstName = "firstName",
+    		secondName = "SecondName",
+    		n = "Just stupid Text";
+    size_t fieldWidth = n.size(); // length of longest text
+
+    cout << setw(fieldWidth) << left << firstName << endl // left padding
+    	 << setw(fieldWidth) << left << secondName << endl
+    	 << setw(fieldWidth) << left << n << endl;
+
+    cout << setw(fieldWidth) << right << firstName << endl // right padding
+    	 << setw(fieldWidth) << right << secondName << endl
+    	 << setw(fieldWidth) << right << n << endl;
+}
